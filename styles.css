@@ -81,6 +81,8 @@ button { border: 0; cursor: pointer; }
 .product-art { position: relative; display: grid; aspect-ratio: .95; place-items: center; background: var(--pearl); border-radius: var(--radius); overflow: hidden; cursor: pointer; transition: transform .35s var(--ease), background .35s ease; }
 .product-art:hover { background: var(--pearl-dark); transform: translateY(-5px); }
 .product-art::before { position: absolute; inset: 0; background: radial-gradient(circle at 71% 24%, var(--orange) 0 11%, transparent 11.4%), linear-gradient(135deg, transparent 0 43%, rgba(29,29,31,.06) 43.3% 44%, transparent 44.3%); content: ""; }
+.product-art:has(.product-image)::before { opacity: .12; }
+.product-image { position: relative; z-index: 1; display: block; width: 76%; height: 82%; object-fit: contain; filter: drop-shadow(9px 14px 9px rgba(0,0,0,.1)); }
 .product-art::after { position: absolute; top: 10%; right: 10%; width: 24px; height: 24px; border: 1px solid var(--ink); border-radius: 50%; content: ""; }
 .art-kodjo .product-object, .art-wall .product-object, .art-exclusive .product-object { position: relative; z-index: 1; width: 48%; aspect-ratio: .72; background: white; clip-path: polygon(23% 4%, 77% 4%, 91% 23%, 81% 31%, 92% 94%, 8% 94%, 19% 31%, 9% 23%); filter: drop-shadow(11px 17px 9px rgba(0,0,0,.12)); }
 .art-kodjo .product-object { background: var(--ink); }
@@ -121,6 +123,10 @@ button { border: 0; cursor: pointer; }
 .video-fallback { position: absolute; z-index: 1; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: white; text-align: center; }
 .video-fallback span { display: grid; width: 64px; height: 64px; place-items: center; padding-left: 4px; border: 1px solid rgba(255,255,255,.7); border-radius: 50%; font-size: 20px; }
 .video-fallback small { max-width: 280px; color: rgba(255,255,255,.65); font-size: 10px; }
+.film-art-panel { display: grid; grid-template-columns: minmax(0, 1.3fr) .7fr; align-items: center; gap: 34px; margin-top: 15px; padding: 18px 24px 18px 6px; background: #292b27; border-top: 1px solid rgba(255,255,255,.12); border-bottom: 1px solid rgba(255,255,255,.12); }
+.film-art-panel img { display: block; width: 100%; max-height: 190px; object-fit: contain; object-position: center; mix-blend-mode: screen; }
+.film-art-panel .section-kicker { margin-bottom: 10px; }
+.film-art-panel p:last-child { max-width: 220px; margin: 0; color: #aaa9a4; font-size: 13px; line-height: 1.45; }
 .people-block { padding-top: 90px; }
 .people-block--voices { padding-top: 70px; }
 .people-heading { display: flex; align-items: baseline; gap: 25px; margin-bottom: 26px; }
@@ -166,6 +172,7 @@ button { border: 0; cursor: pointer; }
 .modal-visuals { min-width: 0; }
 .modal-product-art { display: grid; aspect-ratio: 1; place-items: center; background: var(--pearl); border-radius: 18px; overflow: hidden; }
 .modal-product-art.is-back { background: #e9e5dc; }
+.modal-product-art .product-image { width: 88%; height: 88%; filter: drop-shadow(15px 22px 13px rgba(0,0,0,.13)); }
 .modal-product-art .product-object { transform: scale(1.25); }
 .modal-product-art.is-back .product-object { transform: scale(1.25) rotate(2deg); }
 .view-switcher { display: flex; gap: 7px; margin-top: 11px; }
@@ -192,6 +199,7 @@ button { border: 0; cursor: pointer; }
 .cart-items { flex: 1; min-height: 30px; padding: 6px 0; overflow-y: auto; }
 .cart-line { display: grid; grid-template-columns: 65px 1fr auto; gap: 12px; align-items: center; padding: 15px 0; border-bottom: 1px solid var(--line); }
 .cart-line-art { display: grid; width: 65px; height: 65px; place-items: center; background: var(--pearl); border-radius: 12px; overflow: hidden; }
+.cart-line-art .product-image { width: 94%; height: 94%; filter: none; }
 .cart-line-art .product-object { transform: scale(.47); }
 .cart-line-copy strong { display: block; font-size: 12px; line-height: 1.1; }
 .cart-line-copy span { display: block; margin-top: 4px; color: var(--muted); font-size: 10px; line-height: 1.2; }
@@ -240,6 +248,8 @@ button { border: 0; cursor: pointer; }
   .film-section { margin-top: 95px; padding-top: 75px; padding-bottom: 80px; }
   .film-intro { display: block; }
   .film-intro p:last-child { width: auto; margin-top: 25px; }
+  .film-art-panel { grid-template-columns: 1fr; gap: 8px; padding: 16px; }
+  .film-art-panel img { max-height: 180px; }
   .people-block { padding-top: 65px; }
   .people-heading { display: block; }
   .people-heading h3 { margin-top: 12px; }

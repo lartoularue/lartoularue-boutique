@@ -17,7 +17,8 @@
   const setStatus = (selector, message) => { const node = $(selector); if (node) node.textContent = message; };
 
   function productArt(product, className = '') {
-    return `<div class="product-art ${product.art} ${className}" data-open-product="${product.id}" role="button" tabindex="0" aria-label="Voir ${product.name}"><span class="product-object"></span><span class="product-art__index">${String(products.indexOf(product) + 1).padStart(2, '0')}</span><span class="product-art__label">${product.badge}</span></div>`;
+    const visual = product.image ? `<img class="product-image" src="${product.image}" alt="Visuel ${product.name}" />` : '<span class="product-object"></span>';
+    return `<div class="product-art ${product.art} ${className}" data-open-product="${product.id}" role="button" tabindex="0" aria-label="Voir ${product.name}">${visual}<span class="product-art__index">${String(products.indexOf(product) + 1).padStart(2, '0')}</span><span class="product-art__label">${product.badge}</span></div>`;
   }
 
   function renderProducts() {
@@ -49,7 +50,7 @@
   function renderCart() {
     const items = $('[data-cart-items]'); const empty = $('[data-cart-empty]'); const footer = $('[data-cart-footer]');
     empty.hidden = state.cart.length > 0; footer.hidden = state.cart.length === 0;
-    items.innerHTML = state.cart.map((line) => { const product = productById(line.id); if (!product) return ''; const details = [line.model, line.color, line.size].filter(Boolean).join(' · '); return `<div class="cart-line"><div class="cart-line-art ${product.art}"><span class="product-object"></span></div><div class="cart-line-copy"><strong>${product.name}</strong><span>${details}</span><div class="cart-line-actions"><div class="quantity-control"><button type="button" data-cart-minus="${line.key}" aria-label="Diminuer">−</button><span>${line.quantity}</span><button type="button" data-cart-plus="${line.key}" aria-label="Augmenter">+</button></div><button class="cart-remove" type="button" data-cart-remove="${line.key}">Retirer</button></div></div><strong class="cart-line-price">${money(line.price * line.quantity)}</strong></div>`; }).join('');
+    items.innerHTML = state.cart.map((line) => { const product = productById(line.id); if (!product) return ''; const details = [line.model, line.color, line.size].filter(Boolean).join(' · '); const visual = product.image ? `<img class="product-image" src="${product.image}" alt="" />` : '<span class="product-object"></span>'; return `<div class="cart-line"><div class="cart-line-art ${product.art}">${visual}</div><div class="cart-line-copy"><strong>${product.name}</strong><span>${details}</span><div class="cart-line-actions"><div class="quantity-control"><button type="button" data-cart-minus="${line.key}" aria-label="Diminuer">−</button><span>${line.quantity}</span><button type="button" data-cart-plus="${line.key}" aria-label="Augmenter">+</button></div><button class="cart-remove" type="button" data-cart-remove="${line.key}">Retirer</button></div></div><strong class="cart-line-price">${money(line.price * line.quantity)}</strong></div>`; }).join('');
     $('[data-cart-subtotal]').textContent = money(subtotal());
     $('[data-delivery-note]').textContent = subtotal() >= 15000 ? 'Livraison offerte pour cette précommande. Merci.' : 'Retrait gratuit à Cotonou. Livraison offerte dès 15 000 FCFA.';
     $$('[data-cart-minus]').forEach((button) => button.addEventListener('click', () => adjustLine(button.dataset.cartMinus, -1)));
@@ -66,7 +67,7 @@
     $('[data-modal-category]').textContent = product.category; $('[data-modal-title]').textContent = product.name; $('[data-modal-price]').textContent = money(product.price); $('[data-modal-description]').textContent = product.description;
     fillOption($('[data-modal-models]'), product.models, 'model', state.modal.selections.model); fillOption($('[data-modal-colors]'), product.colors, 'color', state.modal.selections.color); fillOption($('[data-modal-sizes]'), product.sizes, 'size', state.modal.selections.size);
     $('[data-option-model]').hidden = !product.models?.length; $('[data-option-color]').hidden = !product.colors?.length; $('[data-option-size]').hidden = !product.sizes?.length;
-    $('[data-modal-quantity]').textContent = '1'; $('[data-modal-art]').className = `modal-product-art ${product.art}`; $('[data-modal-art]').innerHTML = '<span class="product-object"></span>';
+    $('[data-modal-quantity]').textContent = '1'; $('[data-modal-art]').className = `modal-product-art ${product.art}`; $('[data-modal-art]').innerHTML = product.image ? `<img class="product-image" src="${product.image}" alt="Visuel ${product.name}" />` : '<span class="product-object"></span>';
     $('[data-modal-backdrop]').hidden = false; modal.hidden = false; document.body.classList.add('is-locked'); requestAnimationFrame(() => $('[data-modal-backdrop]').classList.add('is-visible'));
   }
   function closeModal() { $('[data-product-modal]').hidden = true; $('[data-modal-backdrop]').hidden = true; if (!$('[data-cart-drawer]').classList.contains('is-open')) document.body.classList.remove('is-locked'); }
