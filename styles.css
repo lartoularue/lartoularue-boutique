@@ -28,6 +28,7 @@ button { border: 0; cursor: pointer; }
 
 .site-header { position: fixed; z-index: 20; inset: 0 0 auto; display: flex; align-items: center; justify-content: space-between; width: 100%; height: 86px; padding: 18px 38px; background: rgba(251, 250, 248, .87); backdrop-filter: blur(18px); border-bottom: 1px solid rgba(29, 29, 31, .07); transition: background .25s ease; }
 .brand-lockup, .footer-brand { display: inline-flex; flex-direction: column; gap: 0; font-size: 15px; font-weight: 900; line-height: .86; letter-spacing: -.06em; }
+.brand-logo { display: block; width: 56px; height: 45px; object-fit: contain; object-position: center; filter: drop-shadow(1px 2px 0 rgba(232,93,42,.35)); }
 .brand-lockup span:nth-child(2), .footer-brand br + * { color: var(--orange); }
 .main-nav { display: flex; align-items: center; gap: 34px; margin-left: 90px; font-size: 13px; font-weight: 650; letter-spacing: -.01em; }
 .main-nav a { position: relative; padding: 8px 0; }
@@ -53,18 +54,19 @@ button { border: 0; cursor: pointer; }
 .button-whatsapp:hover { background: #d5e4d1; }
 .button-full { width: 100%; }
 
-.hero-art { position: relative; min-height: 590px; background: var(--pearl); overflow: hidden; isolation: isolate; }
-.hero-art::before { position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent 0 33px, rgba(29,29,31,.04) 33px 34px), repeating-linear-gradient(0deg, transparent 0 33px, rgba(29,29,31,.04) 33px 34px); content: ""; opacity: .5; }
-.hero-art::after { position: absolute; right: -10%; bottom: -22%; width: 120%; height: 52%; border: 1px solid rgba(29,29,31,.2); border-radius: 50%; content: ""; transform: rotate(-9deg); }
+.hero-art { position: relative; min-height: 590px; background: #efe8da; overflow: hidden; isolation: isolate; border: 1px solid var(--ink); box-shadow: 12px 12px 0 var(--orange); }
+.hero-art::before { position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent 0 33px, rgba(29,29,31,.07) 33px 34px), repeating-linear-gradient(0deg, transparent 0 33px, rgba(29,29,31,.07) 33px 34px); content: ""; opacity: .65; }
+.hero-art::after { position: absolute; right: -10%; bottom: -22%; width: 120%; height: 52%; border: 1px solid rgba(29,29,31,.35); border-radius: 50%; content: ""; transform: rotate(-9deg); }
+.hero-art__characters { position: absolute; z-index: 4; bottom: -5%; left: 2%; width: 92%; height: 92%; object-fit: contain; object-position: center bottom; filter: drop-shadow(12px 16px 0 rgba(29,29,31,.13)); }
 .hero-art__sun { position: absolute; top: 15%; right: 21%; width: 35%; aspect-ratio: 1; background: var(--orange); border-radius: 50%; opacity: .94; }
 .hero-art__line { position: absolute; z-index: 2; height: 1px; background: var(--ink); opacity: .65; transform-origin: left; }
 .hero-art__line--one { top: 37%; left: 10%; width: 72%; transform: rotate(-14deg); }
 .hero-art__line--two { top: 65%; left: 26%; width: 71%; transform: rotate(11deg); }
-.hero-art__figure { position: absolute; z-index: 3; bottom: 0; background: var(--ink); }
+.hero-art__figure { position: absolute; z-index: 3; bottom: 0; background: var(--ink); opacity: .15; }
 .hero-art__figure--left { left: 17%; width: 29%; height: 53%; border-radius: 48% 52% 0 0 / 25% 25% 0 0; clip-path: polygon(30% 0, 69% 0, 81% 26%, 100% 45%, 85% 100%, 4% 100%, 0 44%, 20% 22%); }
 .hero-art__figure--right { right: 11%; width: 28%; height: 40%; background: var(--orange); border-radius: 50% 50% 0 0 / 25% 25% 0 0; clip-path: polygon(28% 0, 70% 0, 100% 23%, 77% 100%, 23% 100%, 0 24%); }
 .hero-art__caption { position: absolute; z-index: 4; top: 7%; left: 8%; font-size: 11px; font-weight: 800; letter-spacing: .09em; line-height: 1.05; }
-.hero-art__stamp { position: absolute; z-index: 4; right: 8%; bottom: 8%; color: var(--paper); font-size: 25px; font-weight: 900; letter-spacing: -.08em; line-height: .8; text-align: right; }
+.hero-art__stamp { position: absolute; z-index: 5; right: 8%; bottom: 8%; color: var(--ink); font-size: 25px; font-weight: 900; letter-spacing: -.08em; line-height: .8; text-align: right; }
 
 .manifesto { padding: 58px 0 125px; }
 .manifesto-text { margin: 0; font-size: clamp(27px, 4.1vw, 51px); font-weight: 650; letter-spacing: -.065em; line-height: 1.02; }
@@ -159,6 +161,7 @@ button { border: 0; cursor: pointer; }
 
 .site-footer { display: flex; align-items: end; justify-content: space-between; gap: 25px; padding-top: 29px; padding-bottom: 31px; border-top: 1px solid var(--line); }
 .footer-brand { font-size: 22px; }
+.footer-logo { display: block; width: 70px; height: 66px; object-fit: contain; }
 .footer-meta { margin: 0 auto 0 40px; color: var(--muted); font-size: 11px; line-height: 1.35; }
 .footer-meta p { margin: 0; }
 .footer-back { font-size: 11px; font-weight: 750; }
