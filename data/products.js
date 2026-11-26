@@ -37,7 +37,7 @@ window.TEAM = [
 ];
 
 window.VOICES = [
-  ['Roddy Agbo', 'Voix de Kodjo', 'male'], ['Voix off 02', 'Voix de l’affiche', 'male'], ['Voix off 03', 'Voix du passant', 'male'], ['Voix off 04', 'Voix de la ville', 'male'], ['Voix off 05', 'Voix de l’atelier', 'female'], ['Voix off 06', 'Voix du mur', 'male']
+  ['Roddy AGBO', 'Kodjo', 'male', 'assets/voice-roddy.jpg'], ['Bel-Amour WEWE', 'Kora', 'male', 'assets/voice-bel-amour.jpg'], ['Ifè ALLASSADE', 'Kamal', 'female', 'assets/voice-ife.jpg'], ['Solenne GBEDO', 'Akila', 'female', 'assets/voice-solenne.jpg'], ['Laurence ASSION', 'Tanyi', 'female', 'assets/voice-laurence.jpg'], ['Djamille MAMA GAO', 'Virgile', 'male', 'assets/voice-djamille.jpg']
 ];
 
 /* Remplacer ces valeurs avant la mise en production. Les champs vides activent un mode démo explicite. */
