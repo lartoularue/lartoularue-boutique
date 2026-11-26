@@ -14,7 +14,7 @@ Puis ouvrir `http://localhost:3000`.
 
 Modifier uniquement `data/products.js` pour :
 
-- remplacer `VIDEO_ID_A_REMPLACER` dans `index.html` par l’identifiant YouTube officiel ;
+- l’identifiant YouTube officiel est déjà renseigné dans `index.html` (`oXN0iohXRIU`) ;
 - renseigner `googleAppsScriptUrl` avec l’URL de déploiement du Google Apps Script ;
 - renseigner `fedapayUrl` et/ou les templates `mtnUssdTemplate` / `moovUssdTemplate` ;
 - renseigner le vrai `whatsappNumber` au format international, sans `+` ni espaces ;
