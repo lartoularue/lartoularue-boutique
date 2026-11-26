@@ -2,33 +2,38 @@
 window.PRODUCTS = [
   {
     id: 'tee-kodjo', type: 'tshirt', category: 'T-shirt officiel', name: 'Kodjo — Ligne de fuite', price: 8000,
-    badge: 'Pièce signature', art: 'art-kodjo', image: 'assets/tshirt-mockup.png', description: 'Un dessin frontal inspiré de Kodjo, imprimé sur un t-shirt épais et doux. Le trait reste volontairement brut : comme une affiche arrachée au mur, puis gardée.',
-    models: ['Kodjo — Ligne de fuite', 'Kodjo — Profil'], colors: ['Noir', 'Blanc'], sizes: ['S', 'M', 'L', 'XL', 'XXL']
+    badge: 'Pièce signature', art: 'art-kodjo', image: 'assets/tshirt-design-01.jpg', description: 'Le portrait-masque du film imprimé sur un t-shirt noir épais et doux, avec la signature L’ART OU LA RUE.',
+    models: ['Portrait-masque', 'Version orange'], colors: ['Noir'], sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
   {
     id: 'tee-background', type: 'tshirt', category: 'T-shirt officiel', name: 'Décor — Mur vivant', price: 8000,
-    badge: 'Nouveau', art: 'art-wall', description: 'Un fragment de décor du film à porter comme une seconde peau. Imprimé poitrine et dos sur coton unisexe, en série limitée de précommande.',
-    models: ['Décor — Mur vivant', 'Décor — Nuit orange'], colors: ['Noir', 'Blanc'], sizes: ['S', 'M', 'L', 'XL', 'XXL']
+    badge: 'Nouveau', art: 'art-wall', image: 'assets/tshirt-design-02.jpg', description: 'Une collection de masques graphiques issus de l’univers du film, imprimés sur coton noir unisexe.',
+    models: ['Masque rouge', 'Masque orange'], colors: ['Noir'], sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
   {
     id: 'tee-exclusive', type: 'tshirt', category: 'T-shirt officiel', name: 'Exclusif — La rue répond', price: 8000,
-    badge: 'Édition limitée', art: 'art-exclusive', description: 'Le visuel réservé aux premières précommandes. Une composition graphique orange crépusculaire, pensée pour celles et ceux qui soutiennent le film dès le premier geste.',
-    models: ['La rue répond'], colors: ['Noir', 'Blanc'], sizes: ['S', 'M', 'L', 'XL', 'XXL']
+    badge: 'Édition limitée', art: 'art-exclusive', image: 'assets/tshirt-design-03.jpg', description: 'Les personnages du film prennent place sur un t-shirt noir en édition limitée, pensé pour porter l’histoire dans la rue.',
+    models: ['Personnage orange', 'Personnage au chapeau'], colors: ['Noir'], sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
   {
     id: 'tote-kodjo', type: 'tote', category: 'Tote bag collector', name: 'Tote — Les murs parlent', price: 4500,
-    badge: 'Collector', art: 'art-tote', description: 'Un tote bag solide, illustré des signes et textures du film. Pour transporter des livres, des idées et tout ce qui mérite de circuler.',
-    models: ['Les murs parlent', 'La ville en mouvement'], colors: ['Écru'], sizes: []
+    badge: 'Collector', art: 'art-tote', image: 'assets/tote-logo.jpg', description: 'Un tote bag écru collector avec le logo officiel L’ART OU LA RUE, photographié dans son univers de rue.',
+    models: ['Logo officiel', 'Masque', 'Personnage rouge', 'Kodjo'], colors: ['Écru'], sizes: []
   },
   {
     id: 'sticker-characters', type: 'sticker', category: 'Planche A5', name: 'Stickers — Personnages', price: 1500,
-    badge: 'A5 · prédécoupés', art: 'art-stickers', image: 'assets/stickers-personnages.png', description: 'Une planche A5 de stickers prédécoupés à décoller et coller : personnages, signes et petits fragments de l’univers L’ART OU LA RUE.',
-    models: ['Personnages'], colors: [], sizes: []
+    badge: 'A5 · prédécoupés', art: 'art-stickers', image: 'assets/stickers-masques.jpg', description: 'Une planche A5 de masques et de personnages du film, prédécoupée et prête à coller.',
+    models: ['Masques'], colors: [], sizes: []
   },
   {
     id: 'sticker-street', type: 'sticker', category: 'Planche A5', name: 'Stickers — Signes de rue', price: 1500,
-    badge: 'A5 · prédécoupés', art: 'art-street-stickers', image: 'assets/stickers-maman.png', description: 'Une planche thématique dédiée aux textures urbaines du film. À poser sur un carnet, un casque, un mur ou là où l’œil a besoin d’un signe.',
-    models: ['Signes de rue'], colors: [], sizes: []
+    badge: 'A5 · prédécoupés', art: 'art-street-stickers', image: 'assets/stickers-orange.jpg', description: 'Une planche A5 aux couleurs orange et rouge, dédiée aux silhouettes fortes de l’univers L’ART OU LA RUE.',
+    models: ['Orange et rouge'], colors: [], sizes: []
+  },
+  {
+    id: 'sticker-casting', type: 'sticker', category: 'Planche A5', name: 'Stickers — Le casting', price: 1500,
+    badge: 'A5 · prédécoupés', art: 'art-stickers', image: 'assets/stickers-casting.jpg', description: 'Une planche A5 consacrée aux personnages et aux figures du film, à emporter partout.',
+    models: ['Le casting'], colors: [], sizes: []
   }
 ];
 
