@@ -36,19 +36,19 @@ window.PRODUCTS = [
     models: ['Le casting'], colors: [], sizes: []
   },
   {
-    id: 'poster-officiel', type: 'poster', category: 'Poster officiel', name: 'Poster — L’ART OU LA RUE', price: 1500,
-    badge: 'Format affiche', art: 'art-poster', image: 'assets/poster-officiel.jpg', description: 'L’affiche officielle du court-métrage d’animation, imprimée pour prolonger l’univers du film sur vos murs.',
+    id: 'poster-officiel', type: 'poster', category: 'Poster officiel', name: 'Poster — Cover du film', price: 3000,
+    badge: 'Cover officielle', art: 'art-poster', image: 'assets/cover-film.jpg', description: 'La cover officielle du court-métrage d’animation, imprimée comme poster pour prolonger le film sur vos murs.',
     models: ['Poster officiel'], colors: [], sizes: []
   },
   {
-    id: 'tableau-encadre', type: 'tableau', category: 'Tableau encadré', name: 'Tableau — Les personnages', price: 25000,
-    badge: 'Pièce murale', art: 'art-tableau', image: 'assets/tableau-encadre.jpg', description: 'Une pièce encadrée inspirée des personnages du film, pensée comme un objet collector à exposer.',
-    models: ['Les personnages'], colors: [], sizes: []
+    id: 'tableau-encadre', type: 'tableau', category: 'Tableau encadré', name: 'Tableau — Cover du film', price: 25000,
+    badge: 'Mockup encadré', art: 'art-tableau', image: 'assets/tableau-cover-mockup.jpg', description: 'La cover officielle du film présentée en mockup de tableau encadré, comme une pièce collector à exposer.',
+    models: ['Cover encadrée'], colors: [], sizes: []
   }
 ];
 
 window.TEAM = [
-  ['Roddy AGBO', 'Production · animation · clean · compositing · montage', 'male'], ['Bassam BACHABI', 'Base 3D · animation · compositing', 'male'], ['Raphael CAKPO HESSOU', 'Direction artistique · chara-design', 'male'], ['Pamela Chablis', 'Background artist', 'female'], ['Nawal Makou', 'Background artist', 'female'], ['Bodéric Migan', 'Animation', 'male']
+  ['Roddy AGBO', 'Production · animation · clean · compositing · montage', 'male'], ['Bassam BACHABI', 'Base 3D · animation · compositing', 'male'], ['Raphael CAKPO HESSOU', 'Direction artistique · chara-design · animation', 'male'], ['Pamela CHABLIS', 'Background artist', 'female'], ['Nawal MAKOU', 'Background artist · clean', 'female'], ['Bodéric MIGAN', 'Animation · clean', 'male']
 ];
 
 window.VOICES = [
