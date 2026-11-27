@@ -1,17 +1,17 @@
 /* Catalogue modifiable : tarifs en FCFA et variantes de chaque produit. */
 window.PRODUCTS = [
   {
-    id: 'tee-kodjo', type: 'tshirt', category: 'T-shirt officiel', name: 'Kodjo — Ligne de fuite', price: 12000,
+    id: 'tee-kodjo', type: 'tshirt', category: 'T-shirt officiel', name: 'Kodjo — Ligne de fuite', price: 8500,
     badge: 'Pièce signature', art: 'art-kodjo', image: 'assets/tshirt-design-01.jpg', description: 'Le portrait-masque du film imprimé sur un t-shirt noir épais et doux, avec la signature L’ART OU LA RUE.',
     models: ['Portrait-masque', 'Version orange'], colors: ['Noir'], sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
   {
-    id: 'tee-background', type: 'tshirt', category: 'T-shirt officiel', name: 'Décor — Mur vivant', price: 12000,
+    id: 'tee-background', type: 'tshirt', category: 'T-shirt officiel', name: 'Décor — Mur vivant', price: 8500,
     badge: 'Nouveau', art: 'art-wall', image: 'assets/tshirt-design-02.jpg', description: 'Une collection de masques graphiques issus de l’univers du film, imprimés sur coton noir unisexe.',
     models: ['Masque rouge', 'Masque orange'], colors: ['Noir'], sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
   {
-    id: 'tee-exclusive', type: 'tshirt', category: 'T-shirt officiel', name: 'Exclusif — La rue répond', price: 12000,
+    id: 'tee-exclusive', type: 'tshirt', category: 'T-shirt officiel', name: 'Exclusif — La rue répond', price: 8500,
     badge: 'Édition limitée', art: 'art-exclusive', image: 'assets/tshirt-design-03.jpg', description: 'Les personnages du film prennent place sur un t-shirt noir en édition limitée, pensé pour porter l’histoire dans la rue.',
     models: ['Personnage orange', 'Personnage au chapeau'], colors: ['Noir'], sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
@@ -51,12 +51,12 @@ window.PRODUCTS = [
     models: ['Le casting'], colors: [], sizes: []
   },
   {
-    id: 'poster-officiel', type: 'poster', category: 'Poster officiel', name: 'Poster — Cover du film', price: 3000,
+    id: 'poster-officiel', type: 'poster', category: 'Poster officiel', name: 'Poster — Cover du film', price: 3500,
     badge: 'Cover officielle', art: 'art-poster', image: 'assets/cover-film.jpg', description: 'La cover officielle du court-métrage d’animation, imprimée comme poster pour prolonger le film sur vos murs.',
     models: ['Poster officiel'], colors: [], sizes: []
   },
   {
-    id: 'tableau-encadre', type: 'tableau', category: 'Tableau encadré', name: 'Tableau — Cover du film', price: 25000,
+    id: 'tableau-encadre', type: 'tableau', category: 'Tableau encadré', name: 'Tableau — Cover du film', price: 12500,
     badge: 'Mockup encadré', art: 'art-tableau', image: 'assets/tableau-cover-mockup.jpg', description: 'La cover officielle du film présentée en mockup de tableau encadré, comme une pièce collector à exposer.',
     models: ['Cover encadrée'], colors: [], sizes: []
   }
@@ -78,6 +78,6 @@ window.STORE_CONFIG = {
     mtnUssdTemplate: '', // Exemple de forme : *880*1*NUMERO*{amount}# selon votre opérateur.
     moovUssdTemplate: ''
   },
-  whatsappNumber: '22900000000',
+  whatsappNumber: '33759472122',
   currency: 'FCFA'
 };
