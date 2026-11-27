@@ -16,9 +16,24 @@ window.PRODUCTS = [
     models: ['Personnage orange', 'Personnage au chapeau'], colors: ['Noir'], sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
   {
-    id: 'tote-kodjo', type: 'tote', category: 'Tote bag collector', name: 'Tote — Les murs parlent', price: 5500,
+    id: 'tote-kodjo', type: 'tote', category: 'Tote bag collector', name: 'Tote — Logo officiel', price: 5500,
     badge: 'Collector', art: 'art-tote', image: 'assets/tote-logo.jpg', description: 'Un tote bag écru collector avec le logo officiel L’ART OU LA RUE, photographié dans son univers de rue.',
-    models: ['Logo officiel', 'Masque', 'Personnage rouge', 'Kodjo'], colors: ['Écru'], sizes: []
+    models: ['Logo officiel'], colors: ['Écru'], sizes: []
+  },
+  {
+    id: 'tote-masque', type: 'tote', category: 'Tote bag collector', name: 'Tote — Masque', price: 5500,
+    badge: 'Collector', art: 'art-tote', image: 'assets/tote-masque.jpg', description: 'Un tote bag écru collector orné d’un masque graphique issu de l’univers du film.',
+    models: ['Masque'], colors: ['Écru'], sizes: []
+  },
+  {
+    id: 'tote-rouge', type: 'tote', category: 'Tote bag collector', name: 'Tote — Personnage rouge', price: 5500,
+    badge: 'Collector', art: 'art-tote', image: 'assets/tote-rouge.jpg', description: 'Un tote bag écru collector avec le personnage rouge du film.',
+    models: ['Personnage rouge'], colors: ['Écru'], sizes: []
+  },
+  {
+    id: 'tote-kodjo-portrait', type: 'tote', category: 'Tote bag collector', name: 'Tote — Kodjo', price: 5500,
+    badge: 'Collector', art: 'art-tote', image: 'assets/tote-kodjo.jpg', description: 'Un tote bag écru collector avec le portrait de Kodjo.',
+    models: ['Kodjo'], colors: ['Écru'], sizes: []
   },
   {
     id: 'sticker-characters', type: 'sticker', category: 'Planche A5', name: 'Stickers — Personnages', price: 1500,
