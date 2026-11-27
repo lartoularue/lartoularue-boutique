@@ -73,7 +73,7 @@ window.VOICES = [
 /* Remplacer ces valeurs avant la mise en production. Les champs vides activent un mode démo explicite. */
 window.STORE_CONFIG = {
   googleAppsScriptUrl: '',
-  fedapayUrl: '',
+  fedapayUrl: 'https://me.fedapay.com/lartoularue',
   mobileMoney: {
     mtnUssdTemplate: '', // Exemple de forme : *880*1*NUMERO*{amount}# selon votre opérateur.
     moovUssdTemplate: ''
