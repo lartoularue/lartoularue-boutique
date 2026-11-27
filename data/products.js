@@ -78,6 +78,6 @@ window.STORE_CONFIG = {
     mtnUssdTemplate: '', // Exemple de forme : *880*1*NUMERO*{amount}# selon votre opérateur.
     moovUssdTemplate: ''
   },
-  whatsappNumber: '22900000000',
+  whatsappNumber: '33759472122',
   currency: 'FCFA'
 };
