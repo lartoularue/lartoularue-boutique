@@ -1,22 +1,22 @@
 /* Catalogue modifiable : tarifs en FCFA et variantes de chaque produit. */
 window.PRODUCTS = [
   {
-    id: 'tee-kodjo', type: 'tshirt', category: 'T-shirt officiel', name: 'Kodjo — Ligne de fuite', price: 8000,
+    id: 'tee-kodjo', type: 'tshirt', category: 'T-shirt officiel', name: 'Kodjo — Ligne de fuite', price: 12000,
     badge: 'Pièce signature', art: 'art-kodjo', image: 'assets/tshirt-design-01.jpg', description: 'Le portrait-masque du film imprimé sur un t-shirt noir épais et doux, avec la signature L’ART OU LA RUE.',
     models: ['Portrait-masque', 'Version orange'], colors: ['Noir'], sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
   {
-    id: 'tee-background', type: 'tshirt', category: 'T-shirt officiel', name: 'Décor — Mur vivant', price: 8000,
+    id: 'tee-background', type: 'tshirt', category: 'T-shirt officiel', name: 'Décor — Mur vivant', price: 12000,
     badge: 'Nouveau', art: 'art-wall', image: 'assets/tshirt-design-02.jpg', description: 'Une collection de masques graphiques issus de l’univers du film, imprimés sur coton noir unisexe.',
     models: ['Masque rouge', 'Masque orange'], colors: ['Noir'], sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
   {
-    id: 'tee-exclusive', type: 'tshirt', category: 'T-shirt officiel', name: 'Exclusif — La rue répond', price: 8000,
+    id: 'tee-exclusive', type: 'tshirt', category: 'T-shirt officiel', name: 'Exclusif — La rue répond', price: 12000,
     badge: 'Édition limitée', art: 'art-exclusive', image: 'assets/tshirt-design-03.jpg', description: 'Les personnages du film prennent place sur un t-shirt noir en édition limitée, pensé pour porter l’histoire dans la rue.',
     models: ['Personnage orange', 'Personnage au chapeau'], colors: ['Noir'], sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
   {
-    id: 'tote-kodjo', type: 'tote', category: 'Tote bag collector', name: 'Tote — Les murs parlent', price: 4500,
+    id: 'tote-kodjo', type: 'tote', category: 'Tote bag collector', name: 'Tote — Les murs parlent', price: 5500,
     badge: 'Collector', art: 'art-tote', image: 'assets/tote-logo.jpg', description: 'Un tote bag écru collector avec le logo officiel L’ART OU LA RUE, photographié dans son univers de rue.',
     models: ['Logo officiel', 'Masque', 'Personnage rouge', 'Kodjo'], colors: ['Écru'], sizes: []
   },
@@ -34,11 +34,21 @@ window.PRODUCTS = [
     id: 'sticker-casting', type: 'sticker', category: 'Planche A5', name: 'Stickers — Le casting', price: 1500,
     badge: 'A5 · prédécoupés', art: 'art-stickers', image: 'assets/stickers-casting.jpg', description: 'Une planche A5 consacrée aux personnages et aux figures du film, à emporter partout.',
     models: ['Le casting'], colors: [], sizes: []
+  },
+  {
+    id: 'poster-officiel', type: 'poster', category: 'Poster officiel', name: 'Poster — L’ART OU LA RUE', price: 1500,
+    badge: 'Format affiche', art: 'art-poster', image: 'assets/poster-officiel.jpg', description: 'L’affiche officielle du court-métrage d’animation, imprimée pour prolonger l’univers du film sur vos murs.',
+    models: ['Poster officiel'], colors: [], sizes: []
+  },
+  {
+    id: 'tableau-encadre', type: 'tableau', category: 'Tableau encadré', name: 'Tableau — Les personnages', price: 25000,
+    badge: 'Pièce murale', art: 'art-tableau', image: 'assets/tableau-encadre.jpg', description: 'Une pièce encadrée inspirée des personnages du film, pensée comme un objet collector à exposer.',
+    models: ['Les personnages'], colors: [], sizes: []
   }
 ];
 
 window.TEAM = [
-  ['Roddy Agbo', 'Réalisation / scénario', 'male'], ['Bassam Bachabi', 'Direction artistique', 'male'], ['Raphael Cakpo-Hessou', 'Animation', 'male'], ['Pamela Chablis', 'Production', 'female'], ['Nawal Makou', 'Montage', 'male'], ['Bodéric Migan', 'Son / musique', 'male']
+  ['Roddy AGBO', 'Production · animation · clean · compositing · montage', 'male'], ['Bassam BACHABI', 'Base 3D · animation · compositing', 'male'], ['Raphael CAKPO HESSOU', 'Direction artistique · chara-design', 'male'], ['Pamela Chablis', 'Background artist', 'female'], ['Nawal Makou', 'Background artist', 'female'], ['Bodéric Migan', 'Animation', 'male']
 ];
 
 window.VOICES = [

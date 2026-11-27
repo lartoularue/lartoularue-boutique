@@ -12,7 +12,7 @@
     <div class="site-shell">
       <header class="site-header" data-header>
           <a class="brand-lockup" href="#top" aria-label="L'ART OU LA RUE, accueil">
-            <img class="brand-logo" src="assets/logo-film.png" alt="L’ART OU LA RUE" />
+            <img class="brand-logo" src="assets/logo-official.png" alt="L’ART OU LA RUE" />
           </a>
         <nav class="main-nav" aria-label="Navigation principale">
           <a href="#boutique">Boutique</a>
@@ -62,6 +62,8 @@
             <button class="filter-button" type="button" data-filter="tshirt">T-shirts</button>
             <button class="filter-button" type="button" data-filter="tote">Tote bags</button>
             <button class="filter-button" type="button" data-filter="sticker">Stickers</button>
+            <button class="filter-button" type="button" data-filter="poster">Posters</button>
+            <button class="filter-button" type="button" data-filter="tableau">Tableaux</button>
           </div>
           <div class="product-grid" data-product-grid></div>
         </section>
@@ -70,15 +72,15 @@
           <div class="film-intro">
             <p class="section-kicker section-kicker--light">Le court-métrage</p>
             <h2 id="film-title">L’ART OU LA RUE —<br /><em>Teaser (Officiel)</em></h2>
-            <p>Une histoire de regards, de murs et de choix. Découvrez le teaser officiel avant la sortie du film.</p>
+            <p>Un court-métrage d’animation porté par des regards, des murs et des choix.</p>
           </div>
           <div class="video-frame">
             <iframe src="https://www.youtube.com/embed/oXN0iohXRIU" title="L'ART OU LA RUE - Teaser (Officiel)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <div class="video-fallback"><span>▶</span><small>Teaser officiel de L’ART OU LA RUE</small></div>
           </div>
-          <div class="film-art-panel">
-            <img src="assets/personnages-film.png" alt="Personnages et silhouettes issus de l’univers graphique du film" />
-            <div><p class="section-kicker section-kicker--light">L’univers graphique</p><p>Les personnages, les gestes et les signes qui nourrissent les visuels du merch.</p></div>
+          <div class="film-text-grid">
+            <article class="film-text-card"><p class="section-kicker section-kicker--light">Logline</p><p>Dans la rue, chaque regard, chaque mur et chaque geste devient une prise de parole.</p></article>
+            <article class="film-text-card"><p class="section-kicker section-kicker--light">Synopsis</p><p>À travers un univers graphique fait de personnages, de signes et de textures urbaines, le film raconte la création comme un espace de liberté, de rencontre et de choix.</p></article>
           </div>
           <div class="people-block">
             <div class="people-heading"><p class="section-kicker section-kicker--light">Les regards derrière l’image</p><h3>L’Équipe du Film</h3></div>
@@ -97,24 +99,17 @@
             <p>Vous pouvez contribuer sans acheter. Chaque dépôt aide l’équipe à finir, montrer et faire voyager le film.</p>
             <p class="support-note">Les remerciements peuvent être anonymes ou porter votre nom.</p>
           </div>
-          <form class="support-form" data-support-form>
-            <div class="quick-amounts" role="group" aria-label="Montants rapides">
-              <button type="button" class="amount-chip" data-support-amount="2000">2 000</button>
-              <button type="button" class="amount-chip" data-support-amount="5000">5 000</button>
-              <button type="button" class="amount-chip" data-support-amount="10000">10 000</button>
-            </div>
-            <label class="field-label" for="support-amount">Montant de votre choix <span>(FCFA)</span></label>
-            <input class="field" id="support-amount" name="amount" type="number" min="100" step="100" placeholder="Ex. 7 500" required />
-            <label class="field-label" for="support-name">Votre nom <span>(facultatif)</span></label>
-            <input class="field" id="support-name" name="name" type="text" placeholder="Pour les remerciements" />
-            <button class="button button-orange" type="submit">Faire un dépôt Mobile Money <span aria-hidden="true">↗</span></button>
-            <p class="form-status" data-support-status role="status"></p>
-          </form>
+          <div class="support-form support-card">
+            <p class="support-card__title">Vous souhaitez faire un don au projet ?</p>
+            <p class="support-card__copy">Écrivez-nous directement pour connaître les modalités de soutien et d’accompagnement du film.</p>
+            <a class="button button-orange" href="mailto:lartoularue.anim@gmail.com?subject=Soutenir%20L%E2%80%99ART%20OU%20LA%20RUE&body=Bonjour%2C%20je%20souhaite%20soutenir%20le%20projet%20L%E2%80%99ART%20OU%20LA%20RUE.%20Voici%20mon%20message%20%3A">Faire un don par e-mail <span aria-hidden="true">↗</span></a>
+            <p class="support-email">lartoularue.anim@gmail.com</p>
+          </div>
         </section>
       </main>
 
       <footer class="site-footer section-wrap">
-        <div class="footer-brand"><img class="footer-logo" src="assets/logo-film.png" alt="L’ART OU LA RUE" /></div>
+        <div class="footer-brand"><img class="footer-logo" src="assets/logo-official.png" alt="L’ART OU LA RUE" /></div>
         <div class="footer-meta"><p>Un film de gestes, de voix et de bitume.</p><p>© 2026 L’ART OU LA RUE</p></div>
         <a class="footer-back" href="#top">Retour en haut ↑</a>
       </footer>
